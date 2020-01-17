@@ -2,6 +2,7 @@
 BBCON. yoyoyoyo
 Mikkel sier: Har jeg fått det til nå?
 Giske: jeg klarte det!
+G: test hallo
 """
 import random
 import time
@@ -232,10 +233,12 @@ def main():
     white = WhiteFloor()
     avoid = Avoid()
     red = FindRed()
+    green = FindRed()
     bbcon.add_behavior(white)
     bbcon.add_behavior(avoid)
     bbcon.add_behavior(red)
     while bbcon.halt is False:
         bbcon.run_one_timestep()
+
 
 main()
